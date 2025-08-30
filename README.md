@@ -229,8 +229,8 @@ Steps:
 
 Developed with ❤️ by **Your Name**
 
-* GitHub: [https://github.com/yourusername](https://github.com/AllAnTMathew1231)
-* LinkedIn: [https://www.linkedin.com/in/yourusername](https://www.linkedin.com/in/allan-mathew-92874924b/)
+[GitHub](https://github.com/AllAnTMathew1231)  
+[LinkedIn](https://www.linkedin.com/in/allan-mathew-92874924b/)
 
 ---
 
