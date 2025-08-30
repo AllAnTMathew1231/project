@@ -1,8 +1,16 @@
-```markdown
+````markdown
 # 📦 Sales Order Management System
 
-A comprehensive **Sales Order Management System** built with **React, TypeScript, Tailwind CSS, Axios, and Recharts**.  
-The system supports **customer and supplier workflows**, **role-based authentication**, **stock tracking**, **interactive analytics**, and **PDF export** — all wrapped in a modern, responsive UI.
+The **Sales Order Management System** is a modern, full-featured application for managing **customer and supplier operations**.  
+It provides a seamless workflow from order placement to fulfillment, with built-in support for:
+
+- 🔑 Role-based authentication (Customer / Supplier)  
+- 📦 Stock and inventory management  
+- 📊 Interactive analytics and dashboards  
+- 🧾 Invoice and report generation (PDF/CSV)  
+- 🎨 Responsive UI with dark and light themes  
+
+Built with **React, TypeScript, Tailwind CSS, Axios, and Recharts**, it combines performance, scalability, and usability in one system.  
 
 ---
 
@@ -42,11 +50,10 @@ The system supports **customer and supplier workflows**, **role-based authentica
 - **Lint/Format:** ESLint, Prettier
 
 ---
-
+````
 ## 📂 Project Structure
 
-```
-
+```plaintext
 src/
 ├─ components/
 │   ├─ OrderForm.tsx
@@ -73,48 +80,47 @@ src/
 │
 ├─ App.tsx              # Routes + layout + theme toggle
 └─ main.tsx
-
 ````
-
----
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js ≥ 18
-- npm or yarn
+### 1. Prerequisites
 
-### Installation
+* Node.js ≥ 18
+* npm (comes with Node.js)
+
+Check versions:
+
 ```bash
-# 1) Clone
-git clone https://github.com/yourusername/sales-order-management.git
-cd sales-order-management
+node -v
+npm -v
+```
 
-# 2) Install deps
+### 2. Setup
+
+```bash
+git clone https://github.com/AllAnTMathew1231/project.git
+cd project
 npm install
-
-# 3) (Optional) Copy env
-cp .env.example .env
-````
-
-### Environment Variables (`.env`)
-
-```
-VITE_API_BASE_URL=http://localhost:5000
-VITE_APP_NAME=Sales Order Management
-```
-
-### Development
-
-```bash
 npm run dev
 ```
 
-### Production Build
+Open: [http://localhost:5173](http://localhost:5173)
+
+### 3. Build for Production
 
 ```bash
 npm run build
 npm run preview
+```
+
+---
+
+### Environment Variables (`.env`)
+
+```env
+VITE_API_BASE_URL=http://localhost:5000
+VITE_APP_NAME=Sales Order Management
 ```
 
 ---
@@ -133,7 +139,7 @@ npm run preview
 * Fields: MRP, Discount %, Tax %, Shipping
 * Formula:
 
-  ```
+  ```plaintext
   discounted = mrp - (mrp * discount/100)
   taxed      = discounted + (discounted * tax/100)
   total      = taxed + shipping
@@ -159,37 +165,6 @@ npm run preview
 
 ---
 
-## 📡 API Endpoints (example)
-
-```
-POST   /api/login
-GET    /api/orders            # list/filter
-POST   /api/orders            # create
-GET    /api/orders/:id
-PATCH  /api/orders/:id        # status updates (approve/ship/complete)
-GET    /api/stock
-PATCH  /api/stock/:itemId
-GET    /api/analytics/summary
-```
-
-> Replace with your backend or `json-server` mocks during development.
-
----
-
-## 🧪 Testing (optional)
-
-* **Unit:** Jest + React Testing Library
-* **E2E:** Cypress
-
-Example:
-
-```bash
-npm run test
-npm run cypress:open
-```
-
----
-
 ## 🌐 Deployment
 
 * **Frontend:** Vercel / Netlify
@@ -202,16 +177,6 @@ Steps:
 2. Build and deploy the frontend.
 3. Add environment vars on the hosting platform.
 
----
-
-## 📸 Screenshots (placeholders)
-
-* `docs/screenshots/login.png`
-* `docs/screenshots/customer-dashboard.png`
-* `docs/screenshots/supplier-dashboard.png`
-* `docs/screenshots/order-form.png`
-* `docs/screenshots/analytics.png`
-* `docs/screenshots/invoice-pdf.png`
 
 ---
 
@@ -227,10 +192,9 @@ Steps:
 
 ## 👨‍💻 Author
 
-Developed with ❤️ by **Your Name**
+Developed by [Allan T Mathew](https://github.com/AllAnTMathew1231)
 
-[GitHub](https://github.com/AllAnTMathew1231)  
-[LinkedIn](https://www.linkedin.com/in/allan-mathew-92874924b/)
+[GitHub](https://github.com/AllAnTMathew1231) , [LinkedIn](https://www.linkedin.com/in/allan-mathew-92874924b/)
 
 ---
 
@@ -238,5 +202,4 @@ Developed with ❤️ by **Your Name**
 
 Licensed under **MIT**. Use it freely for personal or commercial projects.
 
-```
-```
+
